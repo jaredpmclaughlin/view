@@ -1,0 +1,4 @@
+<map id="TCLAP::SwitchArg::SwitchArg" name="TCLAP::SwitchArg::SwitchArg">
+<area shape="rect" id="node2" href="$classTCLAP_1_1CmdLineInterface.html#a13b29ab754c030185e58f779dc355631" title="Adds an argument to the list of arguments to be parsed. " alt="" coords="255,5,460,32"/>
+<area shape="rect" id="node3" href="$classTCLAP_1_1Arg.html#a0abd38f46dbf7d267078134a4817fbb2" title="The char used as a place holder when SwitchArgs are combined. " alt="" coords="277,56,437,83"/>
+</map>

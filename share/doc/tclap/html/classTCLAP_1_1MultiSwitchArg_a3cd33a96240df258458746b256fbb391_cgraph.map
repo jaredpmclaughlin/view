@@ -1,0 +1,6 @@
+<map id="TCLAP::MultiSwitchArg::getValue" name="TCLAP::MultiSwitchArg::getValue">
+<area shape="rect" id="node1" title="Returns int, the number of times the switch has been set." alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$classTCLAP_1_1Arg.html#ac7c68cefa82cce90a0e7be0b149c9407" title="A method that tests whether a string matches this argument." alt="" coords="224,5,403,32"/>
+<area shape="rect" id="node4" href="$classTCLAP_1_1Arg.html#a4d412155b8f9b4956e64e91c48e55a3b" title="Whether to ignore the rest." alt="" coords="227,56,399,83"/>
+<area shape="rect" id="node3" href="$classTCLAP_1_1Visitor.html#a175c37e1cdaf8da483b90480995c4158" title="This method (to implemented by children) will be called when the visitor is visited." alt="" coords="451,5,601,32"/>
+</map>

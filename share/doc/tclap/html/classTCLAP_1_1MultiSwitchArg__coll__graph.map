@@ -1,0 +1,6 @@
+<map id="TCLAP::MultiSwitchArg" name="TCLAP::MultiSwitchArg">
+<area shape="rect" id="node1" title="A multiple switch argument." alt="" coords="5,247,176,273"/>
+<area shape="rect" id="node2" href="$classTCLAP_1_1SwitchArg.html" title="A simple switch argument." alt="" coords="22,171,159,197"/>
+<area shape="rect" id="node3" href="$classTCLAP_1_1Arg.html" title="A virtual base class that defines the essential data for all arguments." alt="" coords="43,95,138,121"/>
+<area shape="rect" id="node4" href="$classTCLAP_1_1Visitor.html" title="A base class that defines the interface for visitors." alt="" coords="33,5,148,32"/>
+</map>

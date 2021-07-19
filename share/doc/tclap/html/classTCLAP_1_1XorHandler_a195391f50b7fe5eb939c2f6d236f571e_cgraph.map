@@ -1,0 +1,10 @@
+<map id="TCLAP::XorHandler::XorHandler" name="TCLAP::XorHandler::XorHandler">
+<area shape="rect" id="node2" href="$classTCLAP_1_1XorHandler.html#ac2f7f7c6778f5aa338f28acbd88e4c8f" title="Add a list of Arg*&#39;s that will be xor&#39;d together. " alt="" coords="200,5,367,32"/>
+<area shape="rect" id="node3" href="$classTCLAP_1_1XorHandler.html#a3df7722e4c4c5d331de69fc902336b00" title="Checks whether the specified Arg is in one of the xor lists and if it does match one, returns the size of the xor list that the Arg matched. " alt="" coords="210,57,357,98"/>
+<area shape="rect" id="node6" href="$classTCLAP_1_1XorHandler.html#a1a74fab4667cc591a1e3094c91bc942d" title="Simply checks whether the Arg is contained in one of the arg lists. " alt="" coords="210,122,357,163"/>
+<area shape="rect" id="node7" href="$classTCLAP_1_1XorHandler.html#a6b25b05b817a5c8cea137eb032cba7de" title="TCLAP::XorHandler::\lgetXorList" alt="" coords="210,187,357,229"/>
+<area shape="rect" id="node8" href="$classTCLAP_1_1XorHandler.html#a257a855934eb343a0fad3c4e5fe5ff57" title="Prints the XOR specific long usage. " alt="" coords="210,253,357,294"/>
+<area shape="rect" id="node9" href="$classTCLAP_1_1XorHandler.html#aca185a80e9df6e4250a230fa5aec7891" title="Returns the XOR specific short usage. " alt="" coords="210,318,357,359"/>
+<area shape="rect" id="node4" href="$classTCLAP_1_1Arg.html#a15d126427847cc782cf53ab7364659df" title="Indicates whether the argument has already been set. " alt="" coords="431,39,561,65"/>
+<area shape="rect" id="node5" href="$classTCLAP_1_1Arg.html#aec9381ca612a2d37239944b8dd512a7e" title="Indicates whether the argument is required. " alt="" coords="415,89,577,116"/>
+</map>
