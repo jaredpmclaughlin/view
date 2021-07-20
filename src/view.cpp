@@ -2,12 +2,14 @@
 #include <iostream>
 #include <algorithm>
 #include <tclap/CmdLine.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 
-int main(int argc, char** argv)
-{
-    // tclap doesn't work right without exception handling
-    try
-    {
+namespace view {
+
+void handle_args(int argc, char** argv){
+     // tclap doesn't work right without exception handling
         // describe the program and seperator
         TCLAP::CmdLine cmd("Description message.", ' ', "0.1");
         // define an argument, the boolean is for required / not
@@ -24,8 +26,15 @@ int main(int argc, char** argv)
         // get values
         std::string dummy = dummyArg.getValue();
         bool switchValue = dummySwitch.getValue();
-    }
+}
 
+}
+
+int main(int argc, char** argv)
+{
+   try{ 
+    view::handle_args(argc, argv);    
+}
     catch(TCLAP::ArgException &e) // catch TCLAP exceptions
     {
         std::cerr<< "error: "<<e.error() <<" for arg "<<e.argId() << std::endl;
