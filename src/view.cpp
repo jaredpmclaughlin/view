@@ -7,8 +7,8 @@ int main(int argc, char** argv)
 {
     // tclap doesn't work right without exception handling
     try
-    {   
-        // describe the program and seperator 
+    {
+        // describe the program and seperator
         TCLAP::CmdLine cmd("Description message.", ' ', "0.1");
         // define an argument, the boolean is for required / not
         TCLAP::ValueArg<std::string> dummyArg("d","dummy","A dummy arg.",false,"homer","string");
@@ -25,9 +25,11 @@ int main(int argc, char** argv)
         std::string dummy = dummyArg.getValue();
         bool switchValue = dummySwitch.getValue();
     }
-        
+
     catch(TCLAP::ArgException &e) // catch TCLAP exceptions
-    { std::cerr<< "error: "<<e.error() <<" for arg "<<e.argId() << std::endl;}
-    
+    {
+        std::cerr<< "error: "<<e.error() <<" for arg "<<e.argId() << std::endl;
+    }
+
     std::cout<<"Success."<<std::endl;
 }
