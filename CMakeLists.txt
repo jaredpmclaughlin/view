@@ -9,6 +9,7 @@ set(default_build_type "RelWithDebInfo")
 
 find_package(OpenGL REQUIRED)
 find_package(glm REQUIRED)
+find_package(GLEW REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
 include_directories(${GFLW_INCLUDE_DIRS})
@@ -24,6 +25,7 @@ add_executable( view
 target_compile_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
 target_link_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
 target_link_libraries(view ${GLFW_LIBRARIES})
+target_link_libraries(view ${GLEW_LIBRARIES})
 # glm is header-only lib
 
 
