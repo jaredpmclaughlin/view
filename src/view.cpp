@@ -19,6 +19,12 @@ public:
 };
 }
 
+namespace {
+const std::string err = "error :";
+const std::string GLFW_fail = "Failed to initialize GLFW";
+
+}
+
 int main(int argc, char** argv)
 {
     // command line argument processing
@@ -42,10 +48,9 @@ int main(int argc, char** argv)
 
 void view::window::loop() {
     do {
-        // Clear the screen. It's not mentioned before Tutorial 02, but it can cause flickering, so it's there nonetheless.
         //glClear( GL_COLOR_BUFFER_BIT );
 
-        // Draw nothing, see you in tutorial 2 !
+// draw here
 
         // Swap buffers
         glfwSwapBuffers(OGLwindow);
@@ -62,7 +67,8 @@ int view::window::init() {
     glewExperimental = GL_TRUE; // Needed for core profile
     if( !glfwInit() )
     {
-        std::cerr<<"Failed to initialize GLFW"<<std::endl;
+        std::cerr<<GLFW_fail<<std::endl;
+        //std::cerr<<"Failed to initialize GLFW"<<std::endl;
         return EXIT_FAILURE;
     }
 
