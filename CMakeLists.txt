@@ -26,6 +26,7 @@ target_compile_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
 target_link_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
 target_link_libraries(view ${GLFW_LIBRARIES})
 target_link_libraries(view ${GLEW_LIBRARIES})
+target_link_libraries(view ${OPENGL_LIBRARIES})
 # glm is header-only lib
 
 
