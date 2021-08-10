@@ -5,6 +5,11 @@ cmake_minimum_required(VERSION 3.13)
 # set CMake project name
 project(VIEW)
 
+IF(WIN32)
+
+
+ELSE()
+
 set(default_build_type "RelWithDebInfo")
 
 find_package(OpenGL REQUIRED)
@@ -28,6 +33,6 @@ target_link_libraries(view ${GLFW_LIBRARIES})
 target_link_libraries(view ${GLEW_LIBRARIES})
 target_link_libraries(view ${OPENGL_LIBRARIES})
 # glm is header-only lib
-
+ENDIF()
 
 
