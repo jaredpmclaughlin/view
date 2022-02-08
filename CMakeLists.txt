@@ -5,20 +5,11 @@ cmake_minimum_required(VERSION 3.13)
 # set CMake project name
 project(VIEW)
 
-IF(WIN32)
+set(CMAKE_CXX_STANDARD 17)
 
-
-ELSE()
-
-set(default_build_type "RelWithDebInfo")
-
-find_package(OpenGL REQUIRED)
-find_package(glm REQUIRED)
-find_package(GLEW REQUIRED)
-find_package(PkgConfig REQUIRED)
-pkg_search_module(GLFW REQUIRED glfw3)
-include_directories(${GFLW_INCLUDE_DIRS})
-
+include(${CMAKE_BINARY_DIR}/build/conanbuildinfo.cmake)
+conan_basic_setup()
+include_directories(${GLFW_INCLUDE_DIRS})
 
 include_directories(include)
 
@@ -29,10 +20,6 @@ add_executable( view
 
 target_compile_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
 target_link_options(view PUBLIC "$<$<CONFIG:Debug>:-pg>")
-target_link_libraries(view ${GLFW_LIBRARIES})
-target_link_libraries(view ${GLEW_LIBRARIES})
-target_link_libraries(view ${OPENGL_LIBRARIES})
+target_link_libraries(view ${CONAN_LIBS})
 # glm is header-only lib
-ENDIF()
-
 

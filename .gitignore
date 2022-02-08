@@ -2,3 +2,10 @@ build
 tools
 libraries
 *.swp
+CMakeFiles
+CMakeCache.txt
+Makefile
+bin
+cmake_install.cmake
+pre-push.sh
+view
